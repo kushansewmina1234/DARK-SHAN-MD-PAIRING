@@ -12,7 +12,7 @@ const readline = require("readline")
 const { parsePhoneNumber } = require("libphonenumber-js")
 
 
-let phoneNumber = "916909137213"
+let phoneNumber = "94772108460"
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
@@ -57,18 +57,18 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +916909137213")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +94772108460")))
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 🍁\nFor example: +94772108460 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +916909137213")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +94772108460")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 🍁\nFor example: +94772108460 : `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
@@ -77,7 +77,7 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
       setTimeout(async () => {
          let code = await XeonBotInc.requestPairingCode(phoneNumber)
          code = code?.match(/.{1,4}/g)?.join("-") || code
-         console.log(chalk.black(chalk.bgGreen(`Your Pairing Code : `)), chalk.black(chalk.white(code)))
+         console.log(chalk.black(chalk.bgGreen(`Your Pairing Code : `)), chalk.blue(chalk.white(code)))
       }, 3000)
    }
 //------------------------------------------------------
@@ -85,21 +85,34 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
         const { connection, lastDisconnect } = s
         if (connection == "open") {
             await delay(1000 * 10)
-            await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `🪀Support/Contact Developer\n\n\n⎆Donate: https://i.ibb.co/W2gYn6S/binance.png\n\n⎆YouTube: https://youtube.com/@DGXeon\n\n⎆Telegram Channel: https://t.me/xeonbotinc\n\n⎆Telegram Chat: https://t.me/+AYOyJflnt-AzNGFl\n\n⎆WhatsApp Gc1: https://chat.whatsapp.com/Kjm8rnDFcpb04gQNSTbW2d\n\n⎆WhatsApp Gc2: https://chat.whatsapp.com/EEOnU0V7dl9HF1mMFO8QWa\n\n⎆WhatsApp Gc3: https://chat.whatsapp.com/Dh0lD0Ee5hN1JMFXNqtxSG\n\n⎆WhatsApp Pm: Wa.me/916909137213\n\n⎆Instagram: https://instagram.com/unicorn_xeon13\n\n⎆GitHub: https://github.com/DGXeon/\n\n⎆Blog: https://dreamguyxeonfiles.blogspot.com/2022/05/bots%20whatsapp%20mods.html?m=1\n\n\n` });
+            await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `🪀Support/Contact Developer-darkshanyt\n\n⎆YouTube: https://youtube.com/@darkshanyt1` });
             await delay(1000 * 2) 
              const output = await pastebin.createPasteFromFile(__dirname+`/session/${id}/creds.json`, "pastebin-js test", null, 1, "N")
 					const xeonses = await XeonBotInc.sendMessage(XeonBotInc.user.id, {
-						text: `dgxeon-` + output.split('/')[3]
+						text: `DARKSHAN;;;` + output.split('/')[3]
 					})
                XeonBotInc.groupAcceptInvite("Kjm8rnDFcpb04gQNSTbW2d");
-             await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `⚠️Do not share this key with anybody⚠️\n
-┌─❖
-│ Ohayo 😽
-└┬❖  
-┌┤✑  Thanks for using X-PairCode
-│└────────────┈ ⳹        
-│©2020-2024 XeonBotInc 
-└─────────────────┈ ⳹\n\n ` }, {quoted: xeonses});
+             await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `┏┅┉⃝┅┅┅┅⃟┅◂ ◃ ◉ ▹ ▸┅⃟┅┅┅┅⃝┅┅┓
+
+╟ ♤ 𝚃𝙷𝙰𝙽𝙺𝚂 𝙵𝙾𝚁 𝙲𝙷𝙾𝙾𝚂𝙴 𝙳𝙰𝚁𝙺 𝚂𝙷𝙰𝙽 ┋𝙼𝙳 
+┋
+╟ ♤ 𝙳𝙴𝚅𝙰𝙻𝙾𝙿𝙴𝚁 𝙱𝚈 𝙺𝚄𝚂𝙷𝙰𝙽 𝚂𝙴𝚆𝙼𝙸𝙽𝙰 
+┋
+╟ 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 𝙱𝙾𝚃 𝙲𝚁𝙴𝙰𝚃𝙴 𝚅𝙸𝙳𝙴𝙾
+┋https://youtube.com/@darkshanyt1
+
+╟ ♤ 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙲𝙷𝙰𝙽𝙽𝙴𝙻
+┋https://whatsapp.com/channel/0029VaFLAgi90x2oD70Hwq1z
+╟ ♤ 𝙽𝙾𝚃𝙴
+┋𝙳𝙾𝙽'𝚃 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝚈𝙾𝚄 𝚂𝙴𝚂𝚂𝙸𝙾𝙽_𝙸𝙳 ┋ 𝚃𝙾  𝙰𝙽𝚈𝙾𝙽𝙴 𝙾𝚃𝙷𝙴𝚁𝚆𝙸𝚂𝙴 𝚃𝙷𝙰𝚃 𝙲𝙰𝙽 ┋𝙰𝙲𝙲𝙴𝚂𝚂 𝙲𝙷𝙰𝚃𝚂
+
+
+◎┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◎
+                         𝙳𝙰𝚁𝙺 𝚂𝙷𝙰𝙽 𝙼𝙳
+◎┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◎
+
+
+┗┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┛` }, {quoted: xeonses});
               await delay(1000 * 2) 
               process.exit(0)
         }
