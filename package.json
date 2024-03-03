@@ -1,5 +1,5 @@
 {
-    "description": "qr",
+    "description": "dark-shan",
     "main": "./index.js",
   "engines" : { 
     "npm" : ">=9.7.2",
