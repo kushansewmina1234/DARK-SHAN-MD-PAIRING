@@ -85,7 +85,7 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
         const { connection, lastDisconnect } = s
         if (connection == "open") {
             await delay(1000 * 10)
-            await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `🪀Support/Contact Developer-darkshanyt\n\n⎆YouTube: https://youtube.com/@darkshanyt1` });
+            await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `🪀 Developer-darkshanyt\n\n⎆YouTube: https://youtube.com/@darkshanyt1` });
             await delay(1000 * 2) 
              const output = await pastebin.createPasteFromFile(__dirname+`/session/${id}/creds.json`, "pastebin-js test", null, 1, "N")
 					const xeonses = await XeonBotInc.sendMessage(XeonBotInc.user.id, {
